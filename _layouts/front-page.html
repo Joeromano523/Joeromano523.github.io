@@ -1,5 +1,11 @@
-{% include head.html %} 
-2 {{ content }} 
-3 <p>Did this front page layout work?</p> 
-4 {% include footer.html %} 
+{% include head.html%}
+{% include header.html %}
+
+<div class="main-content">
+<div class="container">
+{{content}}
+
+</div>
+</div>
+{% include footer.html %}
 
