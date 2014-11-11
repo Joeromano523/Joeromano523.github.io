@@ -131,7 +131,9 @@
 116 .nav-link:hover { 
 117 	background: lightblue; 
 118 } 
-119 
+119 .nav-link.active{
+	background: tomato;
+}
  
 120 /* Columns */ 
 121 
