@@ -1,0 +1,12 @@
+{% include head.html %} 
+2 {% include header.html %} 
+3 
+ 
+4 <div class="main-content"> 
+5 	<div class="container"> 
+6 		{% if page.image %}<img src="{{page.image}}" alt="">{% endif %} 
+7 		<h1>Blog post: {{page.title}}</h1> 
+8 		{{ content }} 
+9 	</div> 
+10 </div> 
+11 {% include footer.html %} 
