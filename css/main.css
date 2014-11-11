@@ -1,0 +1,169 @@
+* { 
+2 	box-sizing: border-box; /* check prefixes, this will make the border be included in the width of an element */ 
+3 } 
+4 
+ 
+5 
+ 
+6 body { 
+7 	font-family: 'Open Sans', serif; 
+8 	font-weight: 400; 
+9 	line-height: 1.5; 
+10 	color: #333; 
+11 	font-size: 16px; 
+12 } 
+13 
+ 
+14 p { 
+15 	margin-bottom: 1.3em; 
+16 	max-width: 35em; 
+17 } 
+18 
+ 
+19 h1, h2, h3, h4 { 
+20 	margin: 1.414em 0 0.5em; 
+21 	font-weight: inherit; 
+22 	line-height: 1.2; 
+23 } 
+24 
+ 
+25 h1 { 
+26 	margin-top: 0; 
+27 	font-size: 2.074em; 
+28 } 
+29 
+ 
+30 h2 {font-size: 1.728em;} 
+31 
+ 
+32 h3 {font-size: 1.44em;} 
+33 
+ 
+34 h4 {font-size: 1.2em;} 
+35 
+ 
+36 small, .font_small {font-size: 0.833em;} 
+37 
+ 
+38 a { 
+39 	color: red; 
+40 } 
+41 a:hover { 
+42 	text-decoration: none; 
+43 	color: orange; 
+44 } 
+45 
+ 
+46 /* Layout */ 
+47 .container { 
+48 	max-width: 1000px; /* max-width will scale to the browser, while just `width` will always be the value */ 
+49 	margin-left: auto; /* or margin: 0 auto; -- both will center a block element on a page or in a container */ 
+50 	margin-right: auto; 
+51 } 
+52 @media (max-width: 1050px){ 
+53 	.container { 
+54 		padding-left: 1em; 
+55 		padding-right: 1em; 
+56 	} 
+57 } 
+58 .site-header { 
+59 	padding: 2em 0; 
+60 } 
+61 .hero-img { 
+62 	max-width: 100%; /* max-width will scale to the browser or container */ 
+63 } 
+64 .site-title {  
+65 	font-weight: bold; 
+66 	font-size: 1.25em; 
+67 	color: tomato; 
+68 	text-decoration: none; 
+69 } 
+70 .site-title:hover { 
+71 	background: tomato; 
+72 	color: white; 
+73 } 
+74 
+ 
+75 
+ 
+76 
+ 
+77 .site-footer { 
+78 	margin-top: 3em; 
+79 	background: black; 
+80 	color: white; 
+81 	padding: 2em 0; 
+82 } 
+83 
+ 
+84 /* Navigation */ 
+85 .header-nav { 
+86 	list-style: none; 
+87 	margin: 0; 
+88 	padding: 0; 
+89 } 
+90 .header-nav li { 
+91 	margin-bottom: 0.25em; 
+92 } 
+93 @media (min-width: 630px){ 
+94 	.header-nav li { 
+95 		display: inline-block; 
+96 	} 
+97 	.navbar { 
+98 		float: right; 
+99 	} 
+100 	.site-title { 
+101 		float: left; 
+102 	} 
+103 	.nav-link { 
+104 		border-radius: 1em; 
+105 	} 
+106 } 
+107 .nav-link { 
+108 	background: #ddd; 
+109 	padding: 0.25em 0.75em; 
+110 	text-decoration: none; 
+111 	color: black; 
+112 	margin: 0 0.25em; 
+113 	 
+114 	display: block; 
+115 } 
+116 .nav-link:hover { 
+117 	background: lightblue; 
+118 } 
+119 
+ 
+120 /* Columns */ 
+121 
+ 
+122 
+ 
+123 @media (min-width: 630px){ 
+124 	.content-columns { 
+125 		text-align: center; 
+126 	} 
+127 	.col { 
+128 		float: left; 
+129 		width: 33.33%; 
+130 	} 
+131 } 
+132 
+ 
+133 
+ 
+134 /* Utilities */ 
+135 
+ 
+136 .cf:before, 
+137 .cf:after { 
+138 	content: " "; 
+139 	display: table; 
+140 } 
+141 
+ 
+142 .cf:after { 
+143 	clear: both; 
+144 } 
+145 .cf { 
+146 	*zoom: 1; 
+147 } 
